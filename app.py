@@ -3,14 +3,13 @@ import cohere
 import os
 from dotenv import load_dotenv
 
-
 load_dotenv()
 
 # Initialize the Cohere client with your API key
 api_key = os.getenv('COHERE_API_KEY')
 co = cohere.Client(api_key)
 
-bot_name = "ElsieBot"
+bot_name = "Cohere"
 
 st.set_page_config(page_title=bot_name, page_icon="🤖", layout="centered")
 
@@ -61,6 +60,3 @@ if prompt := st.chat_input("Say something, I'm giving up on you"):
     with st.chat_message("assistant"):
         st.markdown(response)
     st.session_state.messages.append({"role": "assistant", "content": response})
-
-
-# Lack of Continuity
