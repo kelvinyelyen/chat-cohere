@@ -1,7 +1,4 @@
 # Chat-Cohere
-
-This project features a chatbot application built using Streamlit and Cohere's API, leveraging a range of technologies for a streamlined user interaction experience.
-
 ## Technical Overview
 
 ### Dependencies
